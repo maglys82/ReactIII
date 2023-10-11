@@ -1,8 +1,5 @@
-import React from 'react';
-import Listado from './Listado';
 
-
- const Colaboradores = [
+const Colaboradores = [
     {
         id: "1",
         nombre: "Juan Soto",

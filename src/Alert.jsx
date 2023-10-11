@@ -2,13 +2,13 @@ import React from 'react';
 
 
 
-function Alert({ mensaje }) {
+function Alert({ mensaje, tipo }) {
   if (!mensaje) {
     return null; 
   }
 
   return (
-    <div className={`alert ${mensaje.includes('error') ? 'alert-danger' : 'alert-success'}`} role="alert">
+    <div className={`alert alert-${tipo}`} role="alert">
       {mensaje}
     </div>
   );

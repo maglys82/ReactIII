@@ -1,13 +1,12 @@
 import React from 'react';
-import Colaboradores from './Colaboradores';
+import Table from 'react-bootstrap/Table';
 
-function Listado() {
+function Listado(props) {
   return (
-    <div className="container">
-      <h2>Listado de Colaboradores</h2>
-      <table className="table">
-        <thead>
-          <tr>
+    <Table striped bordered hover>
+      <thead>
+        <tr>
+        
             <th>Nombre</th>
             <th>Correo</th>
             <th>Edad</th>
@@ -16,19 +15,19 @@ function Listado() {
           </tr>
         </thead>
         <tbody>
-          {Colaboradores.map((Colaboradores) => (
-            <tr key={Colaboradores.id}>
-              <td>{Colaboradores.nombre}</td>
-              <td>{Colaboradores.correo}</td>
-              <td>{Colaboradores.edad}</td>
-              <td>{Colaboradores.cargo}</td>
-              <td>{Colaboradores.telefono}</td>
+          {props.colaboradores.map((colaborador) => (
+            <tr key={colaborador.id}>
+              <td>{colaborador.nombre}</td>
+              <td>{colaborador.correo}</td>
+              <td>{colaborador.edad}</td>
+              <td>{colaborador.cargo}</td>
+              <td>{colaborador.telefono}</td>
             </tr>
           ))}
         </tbody>
-      </table>
+      </Table>
      
-    </div>
+  
   );
 }
 
