@@ -4,11 +4,9 @@ import Form from 'react-bootstrap/Form';
 
 function Buscador() {
 
-
   return (
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-
         <Form.Control type="text" placeholder="Buscar Colaborador" />
         <Button className='btn'  variant="primary" type="submit">
           Buscar
@@ -17,6 +15,5 @@ function Buscador() {
     </Form>
   );
 }
-
 
 export default Buscador

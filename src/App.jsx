@@ -9,8 +9,6 @@ import Colaboradores from './Colaboradores';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
 
-
-
 function App() {
   const [colaboradores, setColaboradores] = useState(Colaboradores);
   const [mensajeAlerta, setMensajeAlerta] = useState('');

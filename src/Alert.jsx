@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 function Alert({ mensaje, tipo }) {
   if (!mensaje) {
     return null; 

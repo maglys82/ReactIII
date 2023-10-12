@@ -5,8 +5,7 @@ function Listado(props) {
   return (
     <Table striped bordered hover variant="dark">
       <thead >
-        <tr>
-        
+        <tr>    
             <th>Nombre</th>
             <th>Correo</th>
             <th>Edad</th>
@@ -25,9 +24,7 @@ function Listado(props) {
             </tr>
           ))}
         </tbody>
-      </Table>
-     
-  
+      </Table> 
   );
 }
 
