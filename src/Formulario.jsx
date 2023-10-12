@@ -29,8 +29,6 @@ function Formulario({ agregarColaborador }) {
   const Submit = (e) => {
     e.preventDefault();
 
-
-
     const resultado = agregarColaborador({ nombre, correo, edad, cargo, telefono });
     if (resultado) {
       setNombre('');
