@@ -10,7 +10,7 @@ function Buscador() {
       <Form.Group className="mb-3" controlId="formBasicEmail">
 
         <Form.Control type="text" placeholder="Buscar Colaborador" />
-        <Button variant="primary" type="submit">
+        <Button className='btn'  variant="primary" type="submit">
           Buscar
         </Button>
       </Form.Group>

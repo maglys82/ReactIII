@@ -3,8 +3,8 @@ import Table from 'react-bootstrap/Table';
 
 function Listado(props) {
   return (
-    <Table striped bordered hover>
-      <thead>
+    <Table striped bordered hover variant="dark">
+      <thead >
         <tr>
         
             <th>Nombre</th>
@@ -14,7 +14,7 @@ function Listado(props) {
             <th>Telefono</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='table'>
           {props.colaboradores.map((colaborador) => (
             <tr key={colaborador.id}>
               <td>{colaborador.nombre}</td>
