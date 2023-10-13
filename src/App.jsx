@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import Alert from './Alert'
-import Listado from './Listado'
-import Buscador from './Buscador'
-import Formulario from './Formulario'
-import Colaboradores from './Colaboradores';
+import Colaboradores from './data/Colaboradores';
+import Alert from './components/Alert';
+import Formulario from './components/Formulario';
+import Buscador from './components/Buscador';
+import Listado from './components/Listado';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css'
 
@@ -32,7 +32,7 @@ function App() {
       <h1>Lista de Colaboradores</h1>
       <Alert mensaje={mensajeAlerta} tipo={tipoAlerta}  />
       <Formulario agregarColaborador={agregarColaborador} />
-      < Buscador/>
+      <Buscador />
       <Listado colaboradores={colaboradores} />
     </div>
   );
